@@ -1,0 +1,149 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.main {
+    width: 100%;
+    max-width: 390px;
+    background-color: antiquewhite;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black;
+    padding: 20px;
+}
+
+.main h1 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.main p {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Input and Button Styles */
+input {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    border: none;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    max-width: 150px;
+    margin-top: 20px;
+    font-size: 27px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 2px 2px 15px black;
+    background-color: red;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Header (Results) Styles */
+.header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+#years,
+#months,
+#days {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+    .main {
+        width: 95%;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .main h1 {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .main p {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 24px;
+        height: 45px;
+    }
+
+    #years,
+    #months,
+    #days {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    /* Adjust box shadow and font sizes for better mobile experience */
+    .main {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .main h1 {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 22px;
+    }
+}
